@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <fieldset> <!--This is what adds the border to the form-->
+                <legend>Profile Info</legend><!--This is the name of your form-->
+                Name <input type="text" placeholder="Full name"><br><!--This BR is a break tag, to go 1 line down-->
+                Email <input type="email" placeholder="your@email.com"><br> 
+                Password <input type="password">
+                <br> <br> 
+
+                Gender<br>
+                <input type="radio" name="gender"> Male <br> <!--The name="gender" makes it 1 choice only-->
+                <input type="radio" name="gender"> Female <br>
+                <br> <br> 
+
+                Type of computer:<br> 
+                <input type="checkbox"> I have a laptop <br> <!--Checkbox for multiple choices-->
+                <input type="checkbox"> I have a desktop
+                <br><br>
+
+                Age:<br>
+                <select> <!--Selection list, only one option-->
+                    <option>0 - 20</option>
+                    <option>20 - 40</option>
+                    <option>40+</option>
+                </select> 
+
+                <br><br>
+
+                Biography:<br>
+                <textarea cols="30" rows="3"></textarea>
+                <br><br>
+
+                <input type="submit" value="Save my Info"> 
+                <input type="reset" value="Clear form"> 
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>

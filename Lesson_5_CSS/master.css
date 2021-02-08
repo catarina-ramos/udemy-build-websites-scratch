@@ -1,0 +1,33 @@
+body{
+    background: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: helvetica, arial, sans-serif;
+    color: #fc3
+}
+
+h1{
+    border: dashed 1px #fc3;
+    background: #000;
+    font-size: 2em;
+    padding: 10px;
+}
+
+ol{
+    border: solid 4px #bce3ed;
+    background: #33bcde;
+    padding: 20px 20px 20px 40px;
+    margin: 5% 0;
+}
+
+a{
+    color: #fc3;
+}
+
+strong {
+    color: pink;
+}

@@ -1,0 +1,75 @@
+/* Custom CSS !!This is a comment in CSS!! */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #4d2d06;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+#monkey {
+    background: #fff;
+    color: #4d2d06;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#donkey {
+    background: green;
+    font-family: monospace;
+}
+
+.primary-box { /* This is a class selector*/
+    background: #222;
+    color: #eee;
+}
+
+.secondary-box {
+    background: #eee;
+    color: #222;
+}
+
+.inside-box {
+    margin: 20px 0;
+    padding: 10px;
+    background: #94efff;
+    color: #555;
+
+}
+
+
+/* Descendant Selectors, this can select more descedants instead of selecting only 1--- REVIEW THIS*/ 
+
+.primary-box h2 { /*so: I'm selecting all h2 levels inside the primary box classes. they will be changed to the style you define here*/
+    font-family: helvetica, arial, sans-serif;
+}
+
+.primary-box p em {
+    color: #32b0ff;
+}
+
+.secondary-box p {
+    font-family: helvetica, arial, sans-serif;
+}
+
+.secondary-box em {
+    color: #fc3fff;
+}
+
+
+/*Grouping Selectors - you separate your groups with commas*/
+
+.inside-box h3, .inside-box p {
+    font-size: 20px;
+}
+
+.primary-box, .secondary-box {
+    font-size: 24px;
+    margin: 0 0 10px; /* top, right, bottom left*/
+    padding: 10px;
+}
