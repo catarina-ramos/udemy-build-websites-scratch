@@ -55,4 +55,162 @@ span {
 
 em {
     text-transform: capitalize;
+    /*if you put none, it will override (?)*/
+}
+
+strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a {
+    color: #3ca;
+    text-decoration: none;
+}
+
+code {
+    display: block;
+    color: #e96c28;
+    background: white;
+    padding: 5px
+}
+
+/*Borders*/
+
+.border-box {
+    background: #eee;
+    margin: 0 0 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+#box-1 {
+    border: solid 1px black;
+}
+
+#box-2 {
+    border: dashed 1px black;
+}
+
+#box-3 {
+    border: dotted 1px black;
+}
+
+#box-4 {
+    border: double 3px black;
+    /*for double border 3px is the minimum size*/
+}
+
+#box-5 {
+    border: solid 4px black;
+}
+
+#box-6 {
+    border: dashed 4px black;
+}
+
+#box-7 {
+    border: dotted 4px black;
+}
+
+#box-8 {
+    border: double 6px black;
+}
+
+/* Background Images */
+
+.background-example {
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+}
+
+#background-1 {
+    /* By default, background images repeat X and Y, and are positioned top left */
+    background-image: url("images/blue_background.jpg");
+}
+
+#background-2 {
+    background-color: #a3d;
+}
+
+#background-3 {
+    background-image: url("images/steak_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#background-4 {
+    background: url("images/skull_background.jpg") bottom left repeat-x
+}
+
+/*Forms*/
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    /* this will center it in the middle of the browser. Why? 0:top+bottom auto:right/left margins */
+}
+
+form {
+    background-image: url('images/red_background.jpg');
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form fieldset {
+    /*this is a descendant selector!*/
+    background-image: url('images/blue_background.jpg');
+    padding: 40px;
+    border: solid 1px white;
+}
+
+form legend {
+    border: solid 1px #333;
+    background-image: url('images/blue_background.jpg');
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    display: block;
+    /*instead of being displayed in line*/
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /*this last two lines of code will only be available in some browsers*/
+}
+
+form label {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    /*this selector specifies the type o*/
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: solid 1px #b90707;
+    background-image: url('images/red_background.jpg');
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    border: none;
+    background: url('images/button-background.jpg') top left repeat-x;
+    height: 40px;
+    padding: 0 20px;
+    border: solid 1px d4730c;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    /*when you hover the button this will make the pointer change to a hand-pointer*/
 }
